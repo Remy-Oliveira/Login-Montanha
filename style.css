@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: gray;
+    background: linear-gradient(to top, #17333e, #010b15 );
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ body {
 .loginRegister {
     position: absolute;
     width: 100%;
-    top: 60px;
+    top: 50px;
     text-align: center;
     font-size: 1.5rem;
     transition: all 1s ease-in-out;
@@ -54,7 +54,7 @@ body {
 .loginRegister p {
     position: relative;
     display: inline;
-    margin: 0 30px;
+    margin: 0 20px;
     cursor: pointer;
     color: #ff6400;
     font-weight: 700;
@@ -65,9 +65,9 @@ body {
     content: '';
     border-bottom: 1.5px solid #ff6400;
     top: 20px;
-    left: 15px;
+    left: 10px;
     height: 10px;
-    width: 60px;
+    width: 50px;
 }
 
 .loginRegister p:nth-of-type(2):hover::before {
@@ -75,9 +75,9 @@ body {
     content: '';
     border-bottom: 1.5px solid #ff6400;
     top: 20px;
-    left: 15px;
+    left: 5px;
     height: 10px;
-    width: 60px;
+    width: 25px;
 }
 
 
