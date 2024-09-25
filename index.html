@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login - Montanha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <form class="entrar">
+
+            <div class="loginRegister tittleLogin">
+                <p>Sign in</p>
+                <p onclick="ativar()">SIGN UP</p>
+            </div>
+
+            <div class="inputBox username">
+                <input type="text" id="name" required>
+                <label for="name">USERNAME</label>
+            </div>
+
+            <div class="inputBox password">
+                <input type="password" id="password" required>
+                <label for="password">PASSWORD</label>
+            </div>
+
+            <div class="lembrarCadastro keep">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">KEEP ME SIGN IN</label>
+            </div>
+
+            <button class="signIn">SIGN IN</button>
+
+            <div class="forgotPassword ultimo"><a href="#">FORGOT PASSWORD ?</a></div>
+
+        </form>
+
+        <form class="cadastrar">
+
+            <div class="loginRegister">
+                <p onclick="desativar()">Sign in</p>
+                <p>Sign up</p>
+            </div>
+
+            <div class="inputBox username">
+                <input type="text" id="name" required>
+                <label for="name">USERNAME</label>
+            </div>
+
+            <div class="inputBox email">
+                <input type="email" id="email" required>
+                <label for="email">EMAIL</label>
+            </div>
+
+            <div class="inputBox password">
+                <input type="password" id="password" required>
+                <label for="password">PASSWORD</label>
+            </div>
+
+            <button>SIGN UP</button>
+
+            <div class="forgotPassword"><a href="#">FORGOT PASSWORD ?</a></div>
+
+        </form>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

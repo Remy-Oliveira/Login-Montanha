@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.wrapper {
+    background: url(referencia_1.jpg) no-repeat;
+    border-radius: 20px;
+    background-size: 135%;
+    background-position: calc(60%) calc(5%);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.812);
+    max-height: 550px;
+    min-width: 400px;
+    overflow: hidden;
+}
+
+.entrar,
+.cadastrar {
+    height: 550px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    transition: 1s;
+}
+
+.loginRegister {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all 1s ease-in-out;
+}
+
+.loginRegister p {
+    position: relative;
+    display: inline;
+    margin: 0 30px;
+    cursor: pointer;
+    color: #ff6400;
+    font-weight: 700;
+}
+
+.loginRegister p:nth-of-type(1):hover::before {
+    position: absolute;
+    content: '';
+    border-bottom: 1.5px solid #ff6400;
+    top: 20px;
+    left: 15px;
+    height: 10px;
+    width: 60px;
+}
+
+.loginRegister p:nth-of-type(2):hover::before {
+    position: absolute;
+    content: '';
+    border-bottom: 1.5px solid #ff6400;
+    top: 20px;
+    left: 15px;
+    height: 10px;
+    width: 60px;
+}
+
+
+.inputBox {
+    position: relative;
+    top: -70px;
+    margin: 23px 0;
+    width: 80%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.inputBox input {
+    padding: 5px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ff6400;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+.inputBox input:focus {
+    color: #ff6400;
+}
+
+.inputBox input:focus~label {
+    top: -35px;
+    font-size: 0.8rem;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    top: 0;
+    color: #ff6400;
+    pointer-events: none;
+}
+
+.lembrarCadastro {
+    position: absolute;
+    left: 40px;
+    bottom: 37%;
+    font-size: 0.9rem;
+    color: #ff6400;
+}
+
+form button {
+    position: absolute;
+    padding: 15px;
+    bottom: 17%;
+    border-radius: 30px;
+    width: 45%;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background: #ff6400;
+    color: white;
+}
+
+form button:hover {
+    background: #ca5101;
+}
+
+.forgotPassword {
+    position: absolute;
+    bottom: 40px;
+    font-size: 0.9rem;
+    transition: .5s;
+}
+
+.forgotPassword a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+.entrar.ativar {
+    transition: 1s;
+    transform: translateX(150%);
+}
+
+.cadastrar.ativar {
+    transition: all 1s ease-in-out;
+    transform: translateY(-550px);
+}
+
+
+.cadastrar .loginRegister {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cadastrar .lembrarCadastro {
+    position: absolute;
+    left: 40px;
+    bottom: 34%;
+    font-size: 0.9rem;
+    color: #ff6400;
+}
+
+/* transições Login*/
+
+.entrar.ativar .inputBox {
+    transform: translateY(100px);
+    transition: all .5s ease-in-out;
+    filter: blur(5px);
+}
+
+.entrar.ativar .inputBox.username {
+    transform: translateY(-100px);
+    transition: all .5s ease-in-out;
+    filter: blur(5px);
+
+}
+
+.entrar.ativar .loginRegister.tittleLogin {
+    transform: translateY(-200px);
+    transition: all .5s ease-in-out;
+    filter: blur(5px);
+}
+
+.entrar.ativar .lembrarCadastro.keep {
+    transform: translateY(-200px);
+    transition: all .5s ease-in-out;
+    filter: blur(10px);
+}
+
+.entrar .lembrarCadastro.keep {
+    transition: all .9s ease-in-out;
+ 
+}
+
+.entrar.ativar .signIn {
+    transform: translateY(200px);
+    transition: all 1s ease-in-out;
+    filter: blur(20px);
+}
+
+.entrar .signIn {
+    transition: all 1s ease-in-out;
+}
+
+.entrar.ativar .forgotPassword.ultimo{
+    transform: translateY(100px);
+    transition: all 1s ease-in-out;
+    filter: blur(10px);
+}
+
+.entrar .forgotPassword.ultimo {
+    transition: all 1s ease-in-out;
+}
